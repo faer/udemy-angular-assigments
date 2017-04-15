@@ -1,0 +1,12 @@
+<button
+  class="btn btn-success"
+  (click)="onStartGame()"
+  [disabled]="isGameStarted">
+  Start Game
+</button>
+<button
+  class="btn btn-danger"
+  (click)="onPauseGame()"
+  [disabled]="!isGameStarted">
+  Pause Game
+</button>
