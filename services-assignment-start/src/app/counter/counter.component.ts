@@ -17,7 +17,13 @@ export class CounterComponent implements OnInit {
 
   ngOnInit() {
     this.counterFromActiveToInactivate = this.counterService.counterInactivateUser;
-    this.counterFromInactiveToActive = this.counterService.counterActivateUser;
+    this.counterFromInactiveToActive = this.counterService.getCounterActivateUser().valueOf();
+    this.counterService.counterActivateUserChanged
+      .subscribe(
+        (count: number) => {
+          this.counterFromInactiveToActive = count;
+        }
+      );
   }
 
 }
