@@ -18,6 +18,7 @@ export class UserComponent implements OnInit, OnDestroy {
       id: this.route.snapshot.params['id'],
       name: this.route.snapshot.params['name']
     };
+
     this.paramSubscription = this.route.params
       .subscribe(
         (params: Params) => {
@@ -29,8 +30,7 @@ export class UserComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() { // only need it if custom observables
-    this.paramSubscription.unsubscribe();
+    this.paramSubscription.unsubscribe() ;
   }
-
-
+// tslint:disable-next-line:eofline
 }
