@@ -12,7 +12,7 @@ import { ServerResolver } from './server-resolver.service';
 export class ServerComponent implements OnInit {
   server: {id: number, name: string, status: string};
 
-  constructor(private serversService: ServersService, private route: ActivatedRoute, private router: Router) { }
+  constructor(private serversService: ServersService, private route: ActivatedRoute, private router: Router ) { }
 
   ngOnInit() {
     // const id = +this.route.snapshot.queryParams['id'];
