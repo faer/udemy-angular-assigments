@@ -50,7 +50,7 @@
         <div class="form-group">
           <label for="projectStatus">Project status</label>
           <select id="projectStatus" class="form-control" formControlName="projectStatus">
-            <option *ngFor="let status of projectStatuses">{{ status }}</option>
+            <option *ngFor="let status of projectStatuses" [value]="status">{{ status }}</option>
           </select>
         </div>
         <button class="btn btn-primary" type="submit">Submit</button>
