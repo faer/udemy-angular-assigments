@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
         'email': 'farouk@farouk.be'
       },
       'gender': 'female',
-      'hobbies': []
+      'hobbies': ['']
     });
   }
 
