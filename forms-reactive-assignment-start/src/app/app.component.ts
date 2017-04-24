@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.projectForm);
+    console.log(this.projectForm.value);
   }
 
   projectNamesValidator(control: FormControl): {[s: string]: boolean} {
