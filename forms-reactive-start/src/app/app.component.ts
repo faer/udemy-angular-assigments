@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         'email': 'farouk@farouk.be'
       },
       'gender': 'female',
-      'hobbies': ['Sport']
+      'hobbies': []
     });
 
     this.signupForm.patchValue({
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
         'email': 'farouk@farouk.be'
       },
       'gender': 'female',
-      'hobbies': ['Sport']
+      'hobbies': []
     });
   }
 
